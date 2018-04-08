@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dice Game</title>
+	<link href="style.css" type="text/css" rel="stylesheet"></link>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+	<audio class="sonRoll" src="sounds/sonRoll.wav"></audio>
+	<audio class="sonHold" src="sounds/sonHold.wav"></audio>
+	<audio class="sonWin" src="sounds/sonWin.wav"></audio>
+	<audio class="sonFail" src="sounds/sonFail.wav"></audio>
+
+	<div class="ecran">
+		<div class="block">
+			
+			<div class="blockLeft">
+				<div class="titlePlayer">
+					<h2>PLAYER 1 <i class="fas fa-circle pointPlayer1"></i></h2>
+				</div>
+				<div class="totalScore">
+					<p class="totalScorePlayer1">0</p>
+				</div>
+				<div class="currentScore">
+					<div class="currentScoreContainer">
+						<div class="titleCurrent">CURRENT</div>
+						<div class="nbCurrentPlayer1">0</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="blockRight">
+				<div class="titlePlayer">
+					<h2><i class="fas fa-circle pointPlayer2"></i>  PLAYER 2</h2>
+				</div>
+				<div class="totalScore">
+					<p class="totalScorePlayer2">0</p>
+				</div>
+				<div class="currentScore">
+					<div class="currentScoreContainer">
+						<div class="titleCurrent">CURRENT</div>
+						<div class="nbCurrentPlayer2">0</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="middleBox">
+
+				<div class="blockMuteAndNotice">
+
+					<div class="btnNotice"><i class="fas fa-info-circle notice"></i></div>
+
+					<div class="volumeBox">
+						<div class="volon"><i class="fas fa-volume-up"></i></div>
+						<div class="voloff"><i class="fas fa-volume-off"></i></div>
+					</div>
+
+				</div>
+
+				<div class="newGameBox">
+					<p class="btnNewGame"><span class="plus">+</span>&nbsp&nbsp&nbspNEW GAME</p>
+				</div>
+
+				<div class="desBox">
+					<div class="desBoxContainer">
+						<div class="des1">
+							<img src="images/dice-1.png" class="nb1">
+							<img src="images/dice-2.png" class="nb2">
+							<img src="images/dice-3.png" class="nb3">
+							<img src="images/dice-4.png" class="nb4">
+							<img src="images/dice-5.png" class="nb5">
+							<img src="images/dice-6.png" class="nb6">
+						</div>
+						<div class="des2">
+							<img src="images/dice-1.png" class="nb7">
+							<img src="images/dice-2.png" class="nb8">
+							<img src="images/dice-3.png" class="nb9">
+							<img src="images/dice-4.png" class="nb10">
+							<img src="images/dice-5.png" class="nb11">
+							<img src="images/dice-6.png" class="nb12">
+						</div>
+					</div>
+				</div>
+
+				<div class="commandesBox">
+					<div class="box">
+						<p class="btnRoll"><i class="fas fa-circle-notch pink"></i>&nbsp&nbspROLL DICES</p>
+					</div>
+					<div class="box">
+						<p class="btnHold"><i class="far fa-caret-square-down pink"></i>&nbsp&nbspHOLD</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="winBox">
+				<p>The Winner is<br>the Player <span class="idWinner pink"></span></p>
+			</div>
+
+			<div class="noticeBoxInformation">
+
+				<p>Si l'un des deux dés sort 1 la main passe à l'adverssaire et les points accumulés dans la partie <strong>Current</strong> sont perdus.</p>
+
+				<p>Il est possible de sauver les points de la partie <strong>Current</strong> en appuyant sur <strong>Hold</strong> mais la main passe à l'adverssaire.</p>
+
+				<p>Le premier joueur à atteindre <strong>100 points</strong> gagne la partie.</p>
+				
+			</div>
+
+		</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>   
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
